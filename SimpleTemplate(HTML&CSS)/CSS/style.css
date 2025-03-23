@@ -1,0 +1,364 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+img {
+  max-width: 100%;
+}
+#wrapper {
+  max-width: 1600px;
+  margin: auto;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+.contRest {
+  max-width: 1600px;
+  padding: 20px 30px;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+  align-items: center;
+  padding: 20px 30px;
+}
+#logo {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+header ul {
+  display: flex;
+  gap: 20px;
+}
+header h2 {
+  font-size: 20px;
+  font-weight: bold;
+}
+header li a {
+  padding: 20px 10px;
+  font-size: 13px;
+  color: black;
+}
+header li a:hover {
+  background-color: chartreuse;
+}
+header a:hover {
+  color: white;
+}
+.menuImage {
+  width: 5%;
+  display: none;
+}
+#banner {
+  background-image: url("/Images/banner.avif");
+  background-position: center;
+  background-size: cover;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding: 100px;
+}
+
+#bannerContent h3 {
+  text-transform: uppercase;
+  color: chartreuse;
+  font-weight: bold;
+  font-size: 40px;
+  letter-spacing: 4px;
+  padding: 2px 0;
+}
+#bannerContent p {
+  color: white;
+  padding: 2px 0;
+}
+#services {
+  text-align: center;
+}
+#services h2 {
+  font-size: 26px;
+  padding: 30px 0 30px 0;
+  font-weight: bold;
+}
+#services p {
+  padding: 5px 0;
+}
+#sevicesCard {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 30px;
+}
+.serviceCardContainer {
+  width: calc(33.33% - 2 * 20px / 3);
+}
+.card {
+  background: white;
+  background-position: center;
+  background-size: cover;
+  min-height: 200px;
+  text-align: center;
+  padding: 30px 10px;
+}
+.card img {
+  margin-bottom: 10px;
+  width: 18%;
+}
+.card h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.card p {
+  font-size: 16px;
+}
+#serviceContainer {
+  background-color: lightgrey;
+}
+#process {
+  text-align: center;
+}
+#process h2 {
+  font-size: 26px;
+  font-weight: bold;
+  padding: 30px;
+}
+
+#process p {
+  padding: 5px 0;
+}
+.process-card {
+  background-position: center;
+  background-size: cover;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+.process-card h3 {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+#processCard {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 30px;
+}
+#processCardContainer {
+  width: calc(33.33% - 2 * 20px / 3);
+}
+#processContainer {
+  background-color: chartreuse;
+}
+.imgDescription {
+  background-color: white;
+  padding: 20px;
+}
+@media only screen and (max-width: 767px) {
+  .menuImage {
+    display: block;
+  }
+  header ul {
+    display: none;
+  }
+  #bannerContent h3 {
+    font-size: 34px;
+  }
+  #banner {
+    min-height: 300px;
+    padding: 80px;
+  }
+  .serviceCardContainer {
+    width: calc(50% - 1 * 20px / 2);
+  }
+  #processCardContainer {
+    width: calc(50% - 1 * 20px / 2);
+  }
+}
+@media only screen and (max-width: 567px) {
+  #processCardContainer {
+    width: 100%;
+  }
+  .serviceCardContainer {
+    width: calc(100%);
+  }
+  #banner {
+    min-height: 250px;
+    padding: 60px;
+  }
+  #bannerContent h3 {
+    font-size: 24px;
+    letter-spacing: 3px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  #banner {
+    min-height: 200px;
+    padding: 40px;
+  }
+  #bannerContent h3 {
+    font-size: 20px;
+  }
+  #bannerContent {
+    padding: 15px;
+  }
+  #services p {
+    padding: 3px 0;
+    font-size: 13px;
+  }
+  #process p {
+    padding: 3px 0;
+    font-size: 13px;
+  }
+}
+@media only screen and (max-width: 370px) {
+  #bannerContent h3 {
+    font-size: 15px;
+  }
+  #bannerContent p {
+    font-size: 10px;
+  }
+  #bannerContent {
+    padding: 10px;
+  }
+  #services p {
+    padding: 3px 0;
+    font-size: 11px;
+  }
+  #process p {
+    padding: 3px 0;
+    font-size: 11px;
+  }
+}

@@ -1,0 +1,364 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+img {
+  max-width: 100%;
+}
+body {
+  font-family: sans-serif;
+}
+.contRest {
+  padding: 10px 30px;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0px;
+}
+header h2 {
+  font-weight: bold;
+  letter-spacing: 4px;
+}
+#rigthMenu ul {
+  display: flex;
+  gap: 20px;
+}
+#rigthMenu ul li a {
+  text-decoration: none;
+  color: black;
+  letter-spacing: 3px;
+  padding: 5px;
+}
+#rigthMenu ul :hover {
+  background-color: gray;
+}
+#menu-img {
+  width: 5%;
+  display: none;
+}
+#banner {
+  background-image: url("../Images/architect.jpg");
+  background-position: center;
+  background-size: cover;
+  min-height: 500px;
+}
+#banner img {
+  width: 100%;
+}
+#banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 540px;
+}
+#banner h3 {
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  font-size: 50px;
+  padding: 10px 20px;
+  letter-spacing: 3px;
+}
+#projects h2 {
+  font-size: 26px;
+  margin: 40px 0;
+  padding: 20px 0;
+  border-bottom: 0.1px solid lightgrey;
+}
+#projectCard {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.projectPost {
+  height: 200px;
+  background-position: center;
+  background-size: cover;
+  width: calc(25% - 20px * 3 / 4);
+}
+.projectPost h4 {
+  color: white;
+  display: inline-block;
+  padding: 10px 20px;
+  background: rgba(0, 0, 0, 0.8);
+}
+#about h2 {
+  font-size: 26px;
+  margin: 40px 0;
+  padding: 20px 0;
+  border-bottom: 0.1px solid lightgrey;
+}
+#about p {
+  margin-bottom: 30px;
+}
+#members {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+#members img {
+  min-height: 100px;
+  width: 100%;
+}
+.profile {
+  width: calc(25% - 3 * 20px / 4);
+}
+.profile-img {
+  background-position: center;
+  background-size: cover;
+  min-height: 300px;
+}
+.profile h4 {
+  font-size: 25px;
+  color: rgb(62, 60, 60);
+  margin: 20px 0;
+}
+.desig {
+  color: rgb(125, 121, 121);
+  font-size: 17px;
+  margin: 10px 0;
+}
+
+.profile-info {
+  margin: 20px 0;
+}
+.viewProfile {
+  padding: 10px 0;
+  text-align: center;
+  background-color: rgb(205, 202, 202);
+}
+.viewProfile a {
+  text-decoration: none;
+  color: black;
+}
+.viewProfile:hover {
+  background-color: rgb(113, 111, 111);
+  cursor: pointer;
+}
+#contact {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0;
+}
+#contact h2 {
+  font-size: 26px;
+  padding: 30px 0;
+  border-bottom: 0.1px solid lightgrey;
+}
+#contact p {
+  padding: 20px 0;
+}
+
+#enterDetails {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+}
+#input {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+#btn {
+  margin-top: 20px;
+}
+
+#btn button {
+  padding: 12px 24px;
+  background-color: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+#enterDetails button:hover {
+  background-color: lightgrey;
+}
+#location {
+  margin: 30px 0 10px 0;
+}
+#location img {
+  width: 100%;
+  min-height: 500px;
+}
+#footer {
+  background-color: black;
+  padding: 30px 0;
+  text-align: center;
+  color: white;
+}
+
+@media screen and (max-width: 970px) {
+  .projectPost {
+    width: calc(33.33% - 20px * 2 / 3);
+  }
+  .profile {
+    width: calc(33.33% - 20px * 2 / 3);
+  }
+  #location img {
+    min-height: 400px;
+  }
+}
+@media screen and (max-width: 767px) {
+  #menu-img {
+    display: inline-block;
+  }
+  #rigthMenu ul {
+    display: none;
+  }
+  #banner h3 {
+    font-size: 30px;
+  }
+  #banner {
+    min-height: 340px;
+  }
+  .profile h4 {
+    font-size: 20px;
+  }
+  .profile p {
+    font-size: 15px;
+  }
+  #contact h2 {
+    font-size: 25px;
+  }
+  #enterDetails button {
+    padding: 10px 15px;
+  }
+  .profile {
+    width: calc(50% - 20px * 1 / 2);
+  }
+  .projectPost {
+    width: calc(50% - 20px * 1 / 2);
+  }
+  #location img {
+    min-height: 350px;
+  }
+}
+@media screen and (max-width: 587px) {
+  .profile {
+    width: 100%;
+  }
+  .projectPost {
+    width: calc(100%);
+  }
+}
